@@ -3,11 +3,11 @@ const {
   accessChat,
   fetchChats,
   createGroupChat,
-  renameGroup,
-  addToGroup,
   removeFromGroup,
+  addToGroup,
+  renameGroup,
 } = require("../controllers/chatControllers");
-const { protect } = require("../middlewares/authMiddleware");
+const { protect } = require("../middleware/authMiddleware");
 
 const router = express.Router();
 
